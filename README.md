@@ -139,4 +139,10 @@ TVT Future Team
 Private Project
 
 
+## Test Coverage
+- Mục tiêu coverage tối thiểu: **85%**
+- Kiểm tra bằng: **JaCoCo hoặc NetBeans Coverage Tool**
+- Thực hiện lệnh: `ant test` hoặc chạy `Run Tests` trong NetBeans
+
+
 LINK CANVA : https://www.canva.com/design/DAG2wtx-NaY/Nzb6r-nRtihX76KpdQhNDw/edit?utm_content=DAG2wtx-NaY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
