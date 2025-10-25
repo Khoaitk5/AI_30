@@ -1,0 +1,664 @@
+/* Modal Layout */
+.modal-content {
+    background: #fff;
+    border-radius: 8px;
+    width: 1198px;
+    height: auto;
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.08);
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+    overflow: visible;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: none;
+    overflow-y: visible;
+    z-index: 1001;
+    margin-top: 80px;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    border-radius: 7px 7px 0 0;
+    height: 82px;
+    padding: 0 30px 0 60px;
+    position: relative;
+    margin: 0 !important;
+    box-sizing: border-box;
+}
+
+.modal-content .header-row .btn-close#modalCloseBtn {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") no-repeat 50% 50%;
+    background-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    padding: 8px !important;
+    margin: 0 !important;
+    transition: box-shadow 0.2s;
+    position: absolute !important;
+    right: 30px !important;
+    top: 25px !important;
+    transform: none !important;
+    z-index: 1002 !important;
+}
+
+@media (max-width: 1200px) {
+    .modal-content {
+        width: 90vw;
+        margin: 0 !important;
+    }
+    .modal-content .header-row .btn-close#modalCloseBtn {
+        right: 30px !important;
+        top: 25px !important;
+        margin: 0 !important;
+        padding: 8px !important;
+        transform: none !important;
+        position: absolute !important;
+    }
+    .header-row {
+        padding: 0 30px 0 60px;
+        margin: 0 !important;
+    }
+}
+
+.modal-title {
+    color: #111827;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    margin: 40px 0 0 0;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+    box-shadow: 0 0 0 4px #2e9aa140;
+    outline: none;
+}
+
+.register-rent-box {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    padding: 30px 60px 60px;
+    min-height: 650px;
+}
+
+.car-info,
+.register-rent-box-left {
+    flex: none;
+    min-width: 0;
+    min-height: 100%;
+}
+
+.car-info {
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 424px;
+    box-sizing: border-box;
+}
+
+.car-info-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-card {
+    align-items: center;
+    background-color: #fff;
+    color: #111827;
+    display: flex;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 15px;
+}
+
+.car-card-title {
+    color: #111827;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-right: 65px;
+}
+
+.car-card-img {
+    width: 124px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-card-img figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 124px;
+    height: 70px;
+    margin: 0;
+}
+
+.car-card-img img {
+    width: 124px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.car-info-table hr {
+    margin: 16px 0;
+    border: none;
+    border-top: 1px solid #E5E7EB;
+}
+
+.car-info-bottom {
+    margin: 0;
+    padding: 0;
+}
+
+.car-info-table {
+    color: #111827;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 32px 0 20px 0;
+    padding: 0;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table-row label {
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.car-info-table .table-row span {
+    flex: 0 0 150px;
+    width: 150px;
+    text-align: right;
+    white-space: nowrap;
+    margin-left: 30px;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+    .car-info-table .table-row span {
+        width: 120px;
+        margin-left: 20px;
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+    }
+    .table-row {
+        padding: 0;
+    }
+    .car-info-table {
+        margin: 32px 0 20px 0;
+        padding: 0;
+    }
+}
+
+.table-title-row {
+    margin-top: 32px;
+}
+
+.table-title {
+    color: #3c3c3c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    margin-bottom: 15px;
+}
+
+.total-label,
+.deposit-label {
+    font-size: 17px;
+    font-weight: bold;
+    color: #111827;
+}
+
+.car-info-total-black {
+    color: #111827;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 27px;
+}
+
+.car-info-total {
+    color: #00d287;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+}
+
+.table-note-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.25rem;
+}
+
+.car-info-note {
+    color: #111827;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.register-rent-box-left {
+    background: #fff;
+    border-radius: 8px;
+    width: 654px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: visible;
+    flex: 1 1 0;
+}
+
+.register-rent-form {
+    width: 100%;
+    height: auto;
+}
+
+.form-label {
+    color: #111827;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    margin-bottom: 8px;
+}
+
+.required {
+    color: #FF0000;
+}
+
+.form-control {
+    background-color: #fff;
+    border: 0.8px solid #dee2e6;
+    color: #212529;
+    font-size: 15.2px;
+    line-height: 22.8px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+}
+
+.phone-input,
+.email-input {
+    background: #F7F9F9;
+    cursor: not-allowed;
+}
+
+.renter-info-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.renter-info-row .form-col {
+    position: relative;
+}
+
+.renter-info-row .form-control,
+.renter-info-row .phone-input,
+.renter-info-row .email-input {
+    width: 207px;
+    height: 41px;
+    min-height: 41px;
+    max-height: 41px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-icon .input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.input-with-svg {
+    padding-left: 48px;
+    width: 654px;
+    height: 41px;
+}
+
+.terms-row {
+    display: flex;
+    align-items: center;
+    color: #111827;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 16px;
+    padding: 8px 0;
+}
+
+.custom-checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 1px solid #D1D5DB;
+    margin-right: 8px;
+    accent-color: #00CC7C;
+}
+
+.payment-btn {
+    background: #00CC7C;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 0;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1002;
+    border-radius: 6px;
+    margin-top: 16px;
+    grid-column: 1 / -1;
+}
+
+.payment-btn:disabled {
+    background: #F3F4F6;
+    color: #9CA3AF;
+    cursor: not-allowed;
+}
+
+.btn-confirm {
+    background: #00CC7C;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 0;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+.btn-confirm:hover {
+    background: #00b36b;
+}
+
+.btn-confirm:disabled {
+    background: #F3F4F6;
+    color: #9CA3AF;
+    cursor: not-allowed;
+}
+
+#confirm-rental-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.note-voucher-row {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.note-voucher-col {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.note-voucher-row .form-control {
+    width: 100%;
+    height: 41px;
+    font-size: 15.2px;
+    line-height: 22.8px;
+    padding: 8px 16px;
+}
+
+#rental-date-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: stretch;
+}
+
+#rental-month-col {
+    flex: 0 0 120px;
+    max-width: 120px;
+    min-width: 80px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+}
+
+#rental-month-col input[type="number"] {
+    width: 100%;
+    height: 41px;
+    font-size: 15.2px;
+    line-height: 22.8px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+}
+
+#pickup-group-col,
+#return-date-col {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+}
+
+.date-time-group {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+}
+
+.date-time-group input[type="date"],
+.date-time-group input[type="time"] {
+    flex: 1 1 0;
+    min-width: 0;
+    width: 50%;
+    height: 41px;
+    font-size: 15.2px;
+    line-height: 22.8px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+}
+
+.date-time-group input[type="time"] {
+    width: 90px;
+    min-width: 70px;
+    max-width: 100px;
+    flex: 0 0 90px;
+}
+
+#rental-date-row .form-label {
+    margin-bottom: 0;
+}
+
+#pickup-group-col > div,
+#return-date-col > .date-time-group {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-end;
+    width: 100%;
+}
+
+#pickup-group-col .date-time-group,
+#return-date-col .date-time-group {
+    flex: 1 1 0;
+    min-width: 0;
+    width: 100%;
+}
+
+#pickup-group-col .date-time-group input[type="date"],
+#pickup-group-col .date-time-group input[type="time"],
+#return-date-col .date-time-group input[type="date"],
+#return-date-col .date-time-group input[type="time"] {
+    flex: 1 1 0;
+    min-width: 0;
+    width: 50%;
+    max-width: 100%;
+    height: 41px;
+    font-size: 15.2px;
+    line-height: 22.8px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+}
+
+#rental-month-col[style*="display: flex"] ~ #return-date-col .date-time-group input[type="date"],
+#rental-month-col[style*="display: flex"] ~ #return-date-col .date-time-group input[type="time"] {
+    background: #F7F9F9;
+    pointer-events: none;
+    color: #888;
+    cursor: not-allowed;
+}
+
+#rental-month-col[style*="display: flex"] ~ #pickup-group-col .date-time-group input[type="time"],
+#rental-month-col[style*="display: flex"] ~ #return-date-col .date-time-group input[type="time"] {
+    width: 100px !important;
+    min-width: 85px !important;
+    max-width: 110px !important;
+    flex: 0 0 95px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 700px) {
+    #rental-date-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+    #rental-month-col {
+        max-width: 100%;
+        width: 100%;
+    }
+    .date-time-group {
+        flex-direction: row;
+        gap: 8px;
+    }
+    .date-time-group input[type="date"],
+    .date-time-group input[type="time"] {
+        max-width: 100%;
+        width: 50%;
+    }
+    #confirm-rental-row {
+        margin-top: 8px;
+    }
+    .btn-confirm {
+        width: 100%;
+        padding: 14px 0;
+    }
+}
+
+#voucher-month-row {
+    margin-top: 4px;
+}
+/* Đảm bảo form-row trong rental-date-row hiển thị đồng đều */
+.form-row#rental-date-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px; /* Khoảng cách giữa hai cột */
+    align-items: flex-start; /* Căn chỉnh từ đầu để tránh lệch */
+    justify-content: space-between; /* Phân bố không gian đều */
+    width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
+}
+
+/* Định dạng cho các cột trong rental-date-row */
+.form-row#rental-date-row .form-col {
+    flex: 1 1 50%; /* Chia đều không gian, mỗi cột chiếm 50% */
+    min-width: 0; /* Ngăn tràn nội dung */
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Khoảng cách giữa label và input */
+}
+
+/* Định dạng cho nhóm ngày và giờ */
+.form-row#rental-date-row .date-time-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Khoảng cách giữa input date và time */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    width: 100%; /* Đảm bảo nhóm chiếm toàn bộ chiều rộng của form-col */
+}
+
+/* Định dạng cho các input trong date-time-group */
+.form-row#rental-date-row .date-time-group input.form-control {
+    box-sizing: border-box; /* Bao gồm padding và border trong chiều rộng */
+    padding: 8px; /* Đảm bảo padding đồng đều */
+    font-size: 14px; /* Kích thước font đồng đều */
+    border: 1px solid #ccc; /* Đường viền đồng nhất */
+    border-radius: 4px; /* Góc bo tròn đồng đều */
+    height: 40px; /* Đặt chiều cao cố định cho input */
+}
+
+/* Điều chỉnh kích thước cho input date và time trong Ngày nhận xe */
+.form-row#rental-date-row .form-col:first-child .date-time-group input[type="date"] {
+    width: 35%; /* Thu nhỏ ô ngày nhận xe */
+}
+
+.form-row#rental-date-row .form-col:first-child .date-time-group input[type="time"] {
+    width: 60%; /* Tăng kích thước ô giờ nhận xe */
+}
+
+/* Giữ kích thước mặc định cho Ngày trả xe (date và time chia đều) */
+.form-row#rental-date-row .form-col:last-child .date-time-group input[type="date"],
+.form-row#rental-date-row .form-col:last-child .date-time-group input[type="time"] {
+    width: 48%; /* Chia đều không gian cho date và time */
+}
+
+/* Căn chỉnh label để đồng đều */
+.form-row#rental-date-row .form-label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #333;
+    text-align: left; /* Căn trái nhãn */
+}
+
+/* Đảm bảo nút calendar và clock không gây lệch */
+.form-row#rental-date-row .date-time-group input[type="date"]::-webkit-calendar-picker-indicator,
+.form-row#rental-date-row .date-time-group input[type="time"]::-webkit-calendar-picker-indicator {
+    margin: 0; /* Loại bỏ margin mặc định của biểu tượng lịch */
+    padding: 0;
+}

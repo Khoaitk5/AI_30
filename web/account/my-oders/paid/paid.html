@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="paid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+              rel="stylesheet">
+</head>
+
+<body>
+    <div id="paid-container">
+        <div id="paid-header">
+            <h2 id="paid-title">Thanh toán hóa đơn</h2>
+            <button id="close-btn">✕</button>
+        </div>
+        <div id="invoice-id-section">
+            <div id="invoice-id-row">
+                <div class="invoice-label">Mã hóa đơn</div>
+                <div id="invoice-id-value">
+                    <span class="invoice-id">250715DIHI2CEQF</span>
+                    <button type="button" id="copy-btn">
+                        <div><i class="icon16-copy-gray"></i></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="confirm-info-box">
+            <div class="confirm-info-content">
+                <div class="confirm-info-row">
+                    <div class="confirm-info-name">Loại giao dịch</div>
+                    <div class="confirm-info-text">Thanh toán</div>
+                </div>
+                <div class="confirm-info-row">
+                    <div class="confirm-info-name">Mô tả</div>
+                    <div class="confirm-info-text">Thanh toán lần 1</div>
+                </div>
+                <div class="confirm-info-row">
+                    <div class="confirm-info-name">Số tiền</div>
+                    <div class="confirm-info-text">11.100.000đ</div>
+                </div>
+            </div>
+        </div>
+        <div id="payment-method-section">
+            <label class="form-label">Phương thức thanh toán</label>
+            <button id="payment-method-btn" type="button" role="combobox">
+                <div class="payment-method-placeholder">Chọn phương thức thanh toán</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevron-down" aria-hidden="true">
+                    <path d="m6 9 6 6 6-6"></path>
+                </svg>
+            </button>
+        </div>
+        <button id="pay-btn">Thanh toán 11.100.000đ</button>
+    </div>
+</body>
+
+</html>

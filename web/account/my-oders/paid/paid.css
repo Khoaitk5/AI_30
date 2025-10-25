@@ -1,0 +1,168 @@
+#paid-container {
+    background-color: #fff;
+    box-shadow: #0000002d 0px 16px 48px 0px;
+    color: #111827;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0px 398.5px;
+    padding: 64px 60px 60px;
+    width: 707px;
+    font-family: 'Mulish';
+}
+
+#paid-header {
+    align-items: center;
+    color: #111827;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    line-height: 21px;
+}
+
+#paid-title {
+    color: #111827;
+    font-family: 'Mulish';
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 32px;
+    margin: 0px 0px 8px;
+}
+
+#close-btn {
+    font-size: 33px;
+    color: #8B919E;
+    background: none;
+    border: none;
+    cursor: pointer;
+    /* transform for lg screens */
+}
+
+#invoice-id-section {
+    margin-bottom: 12px;
+}
+
+#invoice-id-row {
+    align-items: center;
+    color: #111827;
+    display: flex;
+    font-size: 14px;
+    gap: 8px;
+    line-height: 18px;
+    margin: 0px 0px 4px;
+    padding: 5px 0px;
+}
+
+.invoice-label {
+    color: #374151;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#invoice-id-value {
+    display: flex;
+    align-items: center;
+}
+
+.invoice-id {
+    color: #1464f4;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+#copy-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transform: translateX(3px);
+    padding: 0;
+    margin-left: 4px;
+}
+
+#confirm-info-box {
+    background-color: #f9fafb;
+    color: #111827;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 24px 23px 12px;
+}
+
+.confirm-info-content {
+    /* no extra style needed */
+}
+
+.confirm-info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.confirm-info-name {
+    color: #6B7280;
+}
+
+.confirm-info-text {
+    font-weight: 600;
+}
+
+#payment-method-section {
+    color: #111827;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 22px 0px 0px;
+}
+
+.form-label {
+    color: #111827;
+    display: inline-block;
+    font-family: 'Mulish';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    margin: 0px 0px 8px;
+}
+
+#payment-method-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #D1D5DB;
+    padding: 8px 12px;
+    background: #fff;
+    width: 100%;
+    height: 44px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: border-color 0.2s;
+}
+
+#payment-method-btn:hover,
+#payment-method-btn:focus {
+    border-color: #00D287;
+    outline: none;
+}
+
+.payment-method-placeholder {
+    color: #9CA3AF;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lucide-chevron-down {
+    height: 16px;
+    width: 16px;
+    opacity: 0.5;
+}
+
+#pay-btn {
+    background-color: #00d287;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Mulish';
+    font-weight: 700;
+    line-height: 24px;
+    margin: 32px 0px 0px;
+    padding: 12px 0px;
+    text-align: center;
+}

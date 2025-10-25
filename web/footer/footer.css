@@ -1,0 +1,177 @@
+/* Footer styles*/
+#footer {
+    font-family: 'SVN Poppins';
+}
+
+.footer-bg {
+    background: #090806;
+    clip-path: polygon(86.942% 0%, 86.942% 0%, 87.104% 0.014%, 87.265% 0.054%, 87.424% 0.121%, 87.582% 0.215%, 87.737% 0.334%, 87.89% 0.479%, 88.039% 0.649%, 88.185% 0.844%, 88.326% 1.064%, 88.464% 1.308%, 98.789% 20.872%, 98.789% 20.872%, 99.007% 21.33%, 99.206% 21.842%, 99.384% 22.403%, 99.542% 23.007%, 99.678% 23.651%, 99.792% 24.329%, 99.881% 25.036%, 99.947% 25.768%, 99.987% 26.519%, 100% 27.286%, 100% 92.278%, 100% 92.278%, 99.964% 93.531%, 99.861% 94.719%, 99.695% 95.827%, 99.473% 96.838%, 99.2% 97.738%, 98.881% 98.51%, 98.523% 99.138%, 98.131% 99.606%, 97.711% 99.899%, 97.268% 100%, 2.732% 100%, 2.732% 100%, 2.289% 99.899%, 1.869% 99.606%, 1.477% 99.138%, 1.119% 98.51%, 0.8% 97.738%, 0.527% 96.838%, 0.305% 95.827%, 0.139% 94.719%, 0.036% 93.531%, 0% 92.278%, 0% 7.722%, 0% 7.722%, 0.036% 6.469%, 0.139% 5.281%, 0.305% 4.173%, 0.527% 3.161%, 0.8% 2.262%, 1.119% 1.49%, 1.477% 0.862%, 1.869% 0.394%, 2.289% 0.101%, 2.732% 0%, 86.942% 0%);
+    position: relative;
+    width: 1457px;
+    min-height: 469px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer-logo {
+    width: 182px;
+    height: 48px;
+    margin: 48px 0px 0px 48px;
+}
+
+.footer-row {
+    margin: 40px 0px 40px 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 1361px;
+    height: 213px
+}
+
+.footer-company {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 454px;
+    flex-shrink: 0;
+}
+
+.company-title {
+    color: #fff;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.company-info {
+    color: #cececd;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.bct-logo {
+    height: 57px;
+    width: 150px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 0 8px;
+    margin-left: 73px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.footer-services,
+.footer-about,
+.footer-contact {
+    width: 242px;
+    height: 142px;
+}
+
+.footer-section-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.footer-link-list {
+    color: #cececd;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    line-height: 24px;
+    margin: 16px 0px 0px;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact-list {
+    margin-top: 16px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    grid-area: auto / span 1 / auto / span 1;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.footer-contact-row {
+    align-items: center;
+    color: #cececd;
+    display: flex;
+    gap: 8px;
+    line-height: 24px;
+}
+
+.footer-contact-main-phone {
+    line-height: 24px;
+}
+
+.footer-contact-phone,
+.footer-contact-email {
+    line-height: 22.8571px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: flex-start;
+    margin-left: 73px;
+    width: auto;
+}
+
+.social-icon {
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-bottom {
+    align-items: center;
+    color: #cececd;
+    display: flex;
+    line-height: 24px;
+    margin: 40px 0px 0px 48px;
+    width: 1361px;
+    height: 32px;
+}
+
+.footer-copyright {
+    font-family: 'SVN Poppins';
+    line-height: 24px;
+    text-align: center;
+}
+
+.footer-bottom-link {
+    width: auto;
+    height: 24px;
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+    margin-left: 815px;
+}
+
+.arrow {
+    width: 30px;
+    height: 32px;
+    margin-left: 40px;
+}

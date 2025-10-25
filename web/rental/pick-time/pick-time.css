@@ -1,0 +1,90 @@
+#rental-form {
+    background-color: #fff;
+    box-shadow: #0000002d 0px 16px 48px 0px;
+    color: #111827;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: 'Mulish';
+    width: 376px;
+}
+
+.submit-btn {
+    background-color: #00d287;
+}
+
+.cancel-btn {
+    background-color: #E5E7EB;
+    color: #1F2937;
+}
+.cancel-btn:hover {
+    background-color: #D1D5DB;
+}
+
+.tab-btn.active {
+    background-color: #00d287;
+    color: #fff;
+}
+
+.day-picker-wrap {
+    background-color: #fff;
+    border-color: #dee2e6;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 0.8px;
+    box-shadow: #0000 0px 0px 0px 0px;
+    color: #020617;
+    font-size: 14px;
+    line-height: 21px;
+    width: 602px;
+    font-family: 'Mulish';
+    overflow: hidden;
+}
+
+.rdp-multiple_months {
+    width: 600px;
+    overflow: hidden;
+}
+
+#calendar-modal.hidden,
+#time-picker-modal.hidden { /* <<< Added time picker modal hidden state */
+    display: none;
+}
+
+#calendar-modal,
+#time-picker-modal { /* <<< Added time picker modal display state */
+    display: flex;
+}
+
+.duration-input.hidden {
+    display: none;
+}
+.duration-input.show {
+    display: block;
+}
+
+.date-picker.disabled,
+.time-picker.disabled {
+    background-color: #f3f4f6;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.date-picker.disabled:hover,
+.time-picker.disabled:hover {
+    border-color: #D1D5DB;
+}
+
+/* <<< ADDED Styles for Time Picker Modal Buttons >>> */
+.timepicker-cancel-btn {
+    background-color: #E5E7EB;
+    color: #1F2937;
+}
+.timepicker-cancel-btn:hover {
+    background-color: #D1D5DB;
+}
+.timepicker-confirm-btn {
+     background-color: #00d287; /* Match main confirm button */
+}
+.timepicker-confirm-btn:hover {
+     background-color: #00a86b; /* Darker green on hover */
+}

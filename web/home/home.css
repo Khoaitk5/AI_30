@@ -1,0 +1,611 @@
+@font-face {
+    font-family: 'SVN Poppins';
+    src: url('../asset/fonts/SVN-Poppins-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN Poppins';
+    src: url('../asset/fonts/SVN-Poppins-ExtraLight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN Poppins';
+    src: url('../asset/fonts/SVN-Poppins-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN Poppins';
+    src: url('../asset/fonts/SVN-Poppins-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN Poppins';
+    src: url('../asset/fonts/SVN-Poppins-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN Poppins';
+    src: url('../asset/fonts/SVN-Poppins-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN Poppins';
+    src: url('../asset/fonts/SVN-Poppins-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN Poppins';
+    src: url('../asset/fonts/SVN-Poppins-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN Poppins';
+    src: url('../asset/fonts/SVN-Poppins-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Reset và base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SVN Poppins', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+/* Custom colors */
+:root {
+    --green-primary: #07F668;
+    --green-secondary: #00D84A;
+    --black: #000000;
+    --gray-100: #f5f5f5;
+    --gray-600: #666666;
+    --gray-800: #1f2937;
+    --sds-size-depth-0: 0px;
+    --sds-size-depth-400: 4px;
+    --sds-size-depth-800: 8px;
+    --sds-size-depth-negative-200: -2px;
+    --sds-color-black-400: rgba(0, 0, 0, 0.4);
+}
+
+/* Container */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Banner styles */
+.hero-banner {
+    height: 826px;
+    position: relative;
+    margin-top: 80px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding: 64px 1rem 0;
+}
+
+.hero-title {
+    font-family: 'Tektur';
+    font-size: 64px;
+    line-height: 72px;
+    color: #07F668;
+    margin: 0 0 24px;
+    text-align: center;
+    width: 800px;
+    height: 144px;
+}
+
+.hero-subtitle {
+    font-family: 'SVN Poppins', sans-serif;
+    font-size: 28px;
+    line-height: 32px;
+    color: #fff;
+    margin: 0 0 32px;
+    text-align: center;
+}
+
+/* Rental Cars Section */
+#rental-cars {
+    min-height: 1002px;
+    height: 1002px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.cars-container {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.cars-content {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+}
+
+.cars-header {
+    text-align: center;
+    width: 913px;
+    height: 163px;
+    margin: 0 auto;
+}
+
+.cars-title {
+    color: #111827;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px;
+    margin: 64px 0 12px 0;
+    text-align: center;
+    width: 100%;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.cars-desc {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.cars-link {
+    color: #090806;
+    text-decoration: none;
+}
+
+.cars-detail-btn {
+    align-items: center;
+    background-color: #FFF;
+    border-color: #000;
+    border-radius: 9999px;
+    border-style: solid;
+    border-width: 0.8px;
+    color: #090806;
+    display: inline-flex;
+    font-family: 'SVN Poppins', sans-serif;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 24px;
+    margin-top: 36px;
+    padding: 12px 32px;
+    text-align: center;
+    height: 48px;
+    margin-bottom: 75px !important;
+    width: 190px;
+}
+
+.cars-detail-btn:hover {
+    background-color: #07F668;
+}
+
+.cars-carousel-wrap {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.cars-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 723px;
+    position: relative;
+    cursor: grab;
+    user-select: none;
+    transition: transform 0.3s ease;
+}
+
+.cars-carousel:active {
+    cursor: grabbing;
+}
+
+/* Cars slide positioning and scaling */
+.cars-slide {
+    position: absolute;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    background: none !important;
+    overflow: visible !important;
+    flex-shrink: 0 !important;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    z-index: 1 !important;
+    top: 50% !important;
+    transform-origin: center center !important;
+}
+
+/* Center slide - larger and prominent */
+.cars-slide.center {
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 3 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Left side slide - positioned 35px from center card */
+.cars-slide.left {
+    left: calc(50% - 467px) !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 2 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Right side slide - positioned 35px from center card */
+.cars-slide.right {
+    left: calc(50% + 467px) !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 2 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Hidden slides - ẩn nhanh nhưng mượt */
+.cars-slide.hidden {
+    opacity: 0 !important;
+    z-index: 0 !important;
+    visibility: hidden !important;
+    transform: translate(-50%, -50%) scale(0.8) !important;
+    transition: opacity 0.2s ease-out, visibility 0s linear 0.2s, transform 0.2s ease-out !important;
+}
+
+.cars-slide-inner {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cars-card-link {
+    width: auto;
+    height: auto;
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.cars-card {
+    width: 397px;
+    height: 487px;
+    border: 0.8px solid #dee2e6;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    background: url("https://greenfuture.tech/images/rents/service_card_bg.webp") center/cover;
+    color: #fff;
+    margin: auto;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Center slide has larger card size */
+.cars-slide.center .cars-card {
+    width: 467px;
+    height: 573px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 0 35px;
+}
+
+/* Side slides keep original size */
+.cars-slide.left .cars-card,
+.cars-slide.right .cars-card {
+    width: 397px;
+    height: 487px;
+}
+
+/* Scaling components for center slide - Updated for 35px padding */
+.cars-slide.center .cars-badge {
+    width: 123px;
+    height: 31px;
+    margin-top: 40px;
+    margin-left: 0;
+    padding: 5px 12px;
+}
+
+.cars-slide.center .cars-badge-text {
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.cars-slide.center .cars-name {
+    font-size: 33px;
+    line-height: 39px;
+    margin: 12px 0 17px 0;
+    padding-left: 0;
+    width: 100%;
+    height: 39px;
+}
+
+.cars-slide.center .cars-img {
+    width: 100%;
+    height: 342px;
+}
+
+.cars-slide.center .cars-specs {
+    padding-left: 0;
+    width: 100%;
+    height: 54px;
+    gap: 0;
+}
+
+.cars-slide.center .cars-spec-group1 {
+    width: 174px;
+    height: 54px;
+}
+
+.cars-slide.center .cars-spec-group2 {
+    width: 261px;
+    height: 54px;
+}
+
+.cars-slide.center .cars-spec-item {
+    height: 27px;
+    width: 174px;
+    gap: 5px;
+}
+
+.cars-slide.center .cars-spec-text {
+    font-size: 19px;
+    line-height: 32px;
+}
+
+/* Scale spec icons for center slide */
+.cars-slide.center .cars-spec-item img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Smooth transitions for all card components */
+.cars-badge,
+.cars-badge-text,
+.cars-name,
+.cars-img,
+.cars-specs,
+.cars-spec-item,
+.cars-spec-text,
+.cars-spec-item img {
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Disable card link clicks in carousel - only allow drag and dot navigation */
+.cars-carousel .cars-card-link {
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Re-enable drag on carousel container */
+.cars-carousel {
+    pointer-events: auto;
+}
+
+/* Ensure dots can be clicked */
+.cars-dots,
+.cars-dot {
+    pointer-events: auto;
+}
+
+.cars-badge {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #00423e;
+    border-radius: 28px;
+    color: #fff;
+    gap: 4px;
+    margin-top: 34px;
+    margin-left: 25px;
+    padding: 4px 10px;
+    width: 105px;
+    height: 26px;
+}
+
+.cars-badge-text {
+    font-family: 'SVN Poppins';
+    font-size: 10px;
+    line-height: 18px;
+    white-space: nowrap;
+}
+
+.cars-name {
+    color: #fff;
+    font-family: 'SVN Poppins';
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 33px;
+    margin: 10px 0 14px 0;
+    padding-left: 30px;
+    width: 396px;
+    height: 33px;
+}
+
+.cars-img {
+    width: 396px;
+    height: 290px;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-bottom: 0;
+}
+
+/* Use flexbox for easier layout */
+.cars-specs {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    width: 396px;
+    height: 46px;
+    margin-top: 0;
+    gap: 0;
+}
+
+.cars-spec-group1 {
+    width: 148px;
+    height: 46px;
+}
+
+.cars-spec-group2 {
+    width: 222px;
+    height: 46px;
+}
+
+.cars-spec-item {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    gap: normal 4px;
+    height: 23px;
+    width: 148px;
+}
+
+.cars-spec-text {
+    color: #fff;
+    font-family: 'SVN Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    text-wrap: nowrap;
+}
+
+.cars-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19.2px;
+    grid-template-columns: auto 1fr;
+    color: #111827;
+    font-size: 14px;
+    line-height: 21px;
+    /* margin: 30px 0px 64px; */
+    position: relative;
+    z-index: 20;
+}
+
+.cars-dots {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: #111827;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0px -9.6px 0px 0px;
+    position: relative;
+    z-index: 30;
+}
+
+.cars-dot {
+    width: 10px;
+    height: 10px;
+    align-items: center;
+    background-color: #909bc6;
+    border-radius: 50%;
+    color: #111827;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cars-dot:hover {
+    background-color: #7289da;
+}
+
+.cars-dot--active {
+    background-color: #5274ff;
+}
+
+/* Section styles */
+.section-title {
+    color: #111827;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.2px;
+    margin: 0px 0px 12px;
+    text-align: center;
+}
+
+.section-description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.detail-btn {
+    align-items: center;
+    background-color: #FFF;
+    border-color: #000;
+    border-radius: 9999px;
+    border-style: solid;
+    border-width: 0.8px;
+    color: #090806;
+    display: inline-flex;
+    font-family: 'SVN Poppins', sans-serif;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 24px;
+    margin-top: 36px;
+    padding: 12px 32px;
+    text-align: center;
+    height: 48px;
+    margin-bottom: 75px !important;
+}
+
+.detail-btn:hover {
+    background-color: #07F668;
+}

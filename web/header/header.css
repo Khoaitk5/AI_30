@@ -1,0 +1,402 @@
+/* Header container */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #090806;
+    color: white;
+    height: 80px;
+    display: flex;
+    font-family: 'SVN Poppins';
+}
+.header.logged-in {
+    height: 88px;
+}
+
+/* Header wrap */
+.header-wrap {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 52.4px;
+    padding: 16px;
+    width: 1416px;
+    position: relative;
+}
+
+/* Navigation row */
+.nav-row {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    gap: normal 48px;
+    width: 775px;
+    height: 45px;
+}
+
+/* User area */
+.user-area {
+    position: relative;
+    overflow: visible !important;
+}
+
+/* Login button */
+#login-btn {
+    width: 152px;
+    height: 48px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* User icon */
+.user-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    object-fit: contain;
+}
+
+/* Login content */
+.login-content {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    padding: 0 16px;
+    min-width: 0;
+    width: 100%;
+}
+
+/* User display name */
+.user-display-name {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+    flex: 1 1 0;
+}
+
+/* Dropdown */
+#user-dropdown {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    height: 122px;
+    z-index: 100000;
+    background-color: #fff;
+    border-color: #e6e6e6;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 0.8px;
+    box-shadow: #0000002d 0px 16px 48px 0px;
+    color: #111827;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 8px 0px 0px;
+    text-align: left;
+}
+#user-dropdown.show {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Header styles (renamed classes) */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #090806;
+    color: white;
+    height: 80px;
+    display: flex;
+    font-family: 'SVN Poppins';
+}
+
+.header-wrap {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 52.4px;
+    padding: 16px;
+    width: 1416px;
+    position: relative;
+}
+
+.header-row {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    gap: normal 48px;
+    width: 775px;
+    height: 45px;
+}
+
+.logo-img {
+    width: 185px;
+    height: 45px;
+}
+
+.nav-link-rental,
+.nav-link-about {
+    color: #fff;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.nav-link-rental:hover,
+.nav-link-about:hover {
+    color: #07F668;
+}
+
+.btn-login {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 9999px;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 24px;
+    padding: 12px 16px;
+    text-align: center;
+    color: #090806;
+    width: 152px;
+    height: 48px;
+    text-wrap: nowrap;
+}
+
+.btn-login:hover {
+    background-color: #07F668;
+    color: #090806;
+}
+
+/* ĐÃ ĐĂNG NHẬP: Style riêng cho nút user */
+.btn-login.logged-in {
+    align-items: center;
+    background-color: #090806;
+    border-color: #07f668;
+    border-radius: 9999px;
+    border-style: solid;
+    border-width: 0.8px;
+    color: #fff;
+    display: flex;
+    font-family: 'SVN Poppins', sans-serif;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 24px;
+    padding: 12px 40px;
+    text-align: center;
+    overflow: visible;
+    margin-right: 12px;
+}
+
+/* Đặt lại vị trí dropdown cho đúng với chiều cao header */
+#header-user-dropdown {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    height: 122px;
+    z-index: 100000;
+    background-color: #fff;
+    border-color: #e6e6e6;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 0.8px;
+    box-shadow: #0000002d 0px 16px 48px 0px;
+    color: #111827;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 8px 0px 0px;
+    text-align: left;
+}
+
+#header-user-dropdown.show {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.logo-box {
+    /* giữ nguyên style như .header-logo nếu có */
+}
+.nav-rental {
+    color: #fff;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 16px;
+}
+.nav-rental:hover {
+    color: #07F668;
+}
+.nav-about {
+    color: #fff;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 16px;
+}
+.nav-about:hover {
+    color: #07F668;
+}
+.login-info {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    padding: 0 16px;
+    min-width: 0;
+    width: 100%;
+    justify-content: center;
+}
+.login-info--guest {
+    justify-content: flex-start;
+    padding-left: 0;
+}
+.user-name {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+    flex: 1 1 0;
+}
+.dropdown-list {
+    color: #111827;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 4px 0px;
+    text-align: left;
+}
+.dropdown-link {
+    border-color: #0000;
+    border-style: solid;
+    border-width: 0.8px;
+    color: #111827;
+    display: inline-block;
+    font-family: 'SVN Poppins';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    padding: 6px 12px;
+    width: 248px;
+    height: 38px;
+}
+.dropdown-link:hover {
+    background: #f3f4f6;
+}
+.dropdown-item {
+    align-items: center;
+    color: #111827;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+}
+.dropdown-icon {
+    color: #111827;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    margin: 0px 8px 0px 0px;
+    text-align: left;
+}
+.dropdown-text {
+    color: #111827;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Toast styles */
+.toast-wrap {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2147483647;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.toast {
+    display: none;
+    align-items: center;
+    background: #fff;
+    color: #111827;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    padding: 12px 20px 12px 16px;
+    min-width: 320px;
+    max-width: 400px;
+    font-size: 15px;
+    font-family: 'SVN Poppins', sans-serif;
+    border-left: 6px solid #10b981;
+    position: relative;
+}
+.toast--success {
+    border-left-color: #10b981;
+}
+.toast-icon {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+}
+.toast-body {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.toast-close {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    margin-left: 12px;
+    padding: 4px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.toast-close:hover {
+    background: #f3f4f6;
+}
+.toast-progress-wrap {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: transparent;
+}
+.toast-progress-bar {
+    height: 100%;
+    background: #10b981;
+    border-radius: 0 0 8px 8px;
+    animation: toast-progress 5s linear forwards;
+}
+@keyframes toast-in {
+    from { opacity: 0; transform: translateY(-20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+@keyframes toast-progress {
+    from { width: 100%; }
+    to { width: 0; }
+}
+.toast--show-anim {
+    display: flex !important;
+    animation: toast-in 0.3s;
+}

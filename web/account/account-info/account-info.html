@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVT Future cho thuê xe điện</title>
+    <link rel="stylesheet" href="account-info.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+    <div class="flex bg-main bg-[#F4F4F4] gap-8 py-8 justify-center">
+        <div class=" flex-col gap-4 w-[300px] max-w-[20%] md:block hidden">
+            <div class="left-tabbar flex gap-4 flex-col">
+                <div class="left-tabbar-item px-4 py-3 text-base font-bold left-tabbar-item-selected cursor-pointer">
+                    <div class="left-tabbar-item-div-selected"></div>Tài khoản của tôi
+                </div>
+                <div class="left-tabbar-item px-4 py-3 text-base font-bold  cursor-pointer"><a href="../my-orders/my-orders.html">Đơn hàng của tôi</a></div>
+                <div class="left-tabbar-item px-4 py-3 text-base font-bold  cursor-pointer"><a href="../privacies-policy/privacies-policy.html">Điều khoản và pháp lý</a></div>
+                <div class="left-tabbar-item px-4 py-3 text-base font-bold  cursor-pointer"><a href="../change-password/change-password.html">Đổi mật khẩu</a></div>
+            </div>
+            <div style="height:1px;background-color:#DDDDDD"></div>
+        </div>
+        <main class="flex flex-col flex-grow  md:max-w-[80%] w-full lg:max-w-[60%]">
+            <div class="flex-1 bg-white py-8 px-8">
+                <p class="text-title text-[24px] font-bold">Thông tin tài khoản</p>
+                <div class="mt-10">
+                    <div
+                        class="flex flex-1 flex-col sm:flex-col md:flex-row sm:justify-center md:justify-between items-center">
+                        <div class="flex flex-col sm:flex-col lg:flex-row lg:flex items-center">
+                            <div class="flex flex-col items-center"><input accept="image/*" class="hidden"
+                                    id="file-input-avatar" type="file"><label for="file-input-avatar"
+                                    class="cursor-pointer object-cover mr-4 w-30 h-30 flex justify-center items-center">
+                                    <div class="relative w-full h-full"><img src="/asset/images/avatardefault_92824.png"
+                                            alt="Image Preview" class="w-full h-full rounded-full object-cover"><button
+                                            type="button"
+                                            class="absolute bottom-4 right-0 mr-1 p-1 bg-white rounded-full shadow focus:outline-none"><svg
+                                                class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                                viewBox="0 0 24 24">
+                                                <path stroke="currentColor" stroke-linejoin="round" stroke-width="1"
+                                                    d="M4 18V8a1 1 0 0 1 1-1h1.5l1.707-1.707A1 1 0 0 1 8.914 5h6.172a1 1 0 0 1 .707.293L17.5 7H19a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z">
+                                                </path>
+                                                <path stroke="currentColor" stroke-linejoin="round" stroke-width="1"
+                                                    d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
+                                            </svg></button></div>
+                                </label></div>
+                            <div class="text-center">
+                                <p class="mb-0 text-fullname text-center text-[24px]">Nguyễn Chí Vương</p>
+                                <p class="mb-0 text-sm  sm:text-start md:text-start text-text-specs italic">Tham gia:
+                                    15/09/2024</p>
+                            </div>
+                        </div>
+                        <div class="flex mt-5 md:mt-0 md:flex-row flex-col">
+                            <div class="flex px-3 py-2 border-brand-primary border-[1px] mr-3 cursor-pointer"><svg
+                                    width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M22 10.5V12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2H13.5"
+                                            stroke="#00D287" stroke-width="1.5" stroke-linecap="round"></path>
+                                        <path
+                                            d="M16.652 3.45506L17.3009 2.80624C18.3759 1.73125 20.1188 1.73125 21.1938 2.80624C22.2687 3.88124 22.2687 5.62415 21.1938 6.69914L20.5449 7.34795M16.652 3.45506C16.652 3.45506 16.7331 4.83379 17.9497 6.05032C19.1662 7.26685 20.5449 7.34795 20.5449 7.34795M16.652 3.45506L10.6872 9.41993C10.2832 9.82394 10.0812 10.0259 9.90743 10.2487C9.70249 10.5114 9.52679 10.7957 9.38344 11.0965C9.26191 11.3515 9.17157 11.6225 8.99089 12.1646L8.41242 13.9M20.5449 7.34795L14.5801 13.3128C14.1761 13.7168 13.9741 13.9188 13.7513 14.0926C13.4886 14.2975 13.2043 14.4732 12.9035 14.6166C12.6485 14.7381 12.3775 14.8284 11.8354 15.0091L10.1 15.5876M10.1 15.5876L8.97709 15.9619C8.71035 16.0508 8.41626 15.9814 8.21744 15.7826C8.01862 15.5837 7.9492 15.2897 8.03811 15.0229L8.41242 13.9M10.1 15.5876L8.41242 13.9"
+                                            stroke="#00D287" stroke-width="1.5"></path>
+                                    </g>
+                                </svg>
+                                <p class="mb-0 ml-2 text-cyan-background">Chỉnh sửa thông tin</p>
+                            </div>
+                            <div class="flex px-3 py-2 border-brand-primary border-[1px] mr-3 cursor-pointer" hidden="">
+                                <p class="mb-0 text-cyan-background">Lưu thông tin</p>
+                            </div>
+                            <div
+                                class="btn-delete flex mt-5 md:mt-0 px-3 py-2 border-brand-primary border-[1px] mr-3 cursor-pointer item-center">
+                                <p class="mb-0 text-red">Xoá tài khoản</p>
+                            </div>
+                            <div
+                                class="flex mt-5 md:mt-0 px-3 py-2 border-brand-primary border-[1px] mr-3 cursor-pointer sm:hidden block">
+                                <p class="mb-0 text-cyan-background">Đổi mật khẩu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex gap-4 flex-col sm:flex-col md:flex-row w-full" hidden="">
+                        <div class="flex flex-1 flex-col w-full">
+                            <p class="text-sm text-text-specs text-start font-medium mb-2">Tên tài khoản</p>
+                            <div class="input-wrapper relative"><input placeholder="Tên tài khoản" disabled=""
+                                    class="py-3 px-1 border-[1px] bg-background w-full pl-4 border-[#D1D5DB] "
+                                    value="Nguyễn Chí Vương"></div>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex gap-4 flex-col sm:flex-col md:flex-row w-full">
+                        <div class="flex flex-1 flex-col w-full">
+                            <p class="text-sm text-birth text-text-specs text-start font-medium mb-2">Ngày sinh</p><button
+                                type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r2p:"
+                                data-state="closed">
+                                <div
+                                    class="flex items-center justify-between min-w-[140px] h-11 border-[1px] border-[#D1D5DB] px-3 py-2.5 text-base bg-white cursor-pointer">
+                                    <span>15/09/2024</span><svg width="17" height="20" viewBox="0 0 17 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.08268 1.66667C6.08268 1.25246 5.7469 0.916672 5.33268 0.916672C4.91847 0.916672 4.58268 1.25246 4.58268 1.66667H6.08268ZM4.58268 5.00001C4.58268 5.41422 4.91847 5.75001 5.33268 5.75001C5.7469 5.75001 6.08268 5.41422 6.08268 5.00001H4.58268ZM12.7493 1.66667C12.7493 1.25246 12.4136 0.916672 11.9993 0.916672C11.5851 0.916672 11.2493 1.25246 11.2493 1.66667H12.7493ZM11.2493 5.00001C11.2493 5.41422 11.5851 5.75001 11.9993 5.75001C12.4136 5.75001 12.7493 5.41422 12.7493 5.00001H11.2493ZM3.66602 4.08334H13.666V2.58334H3.66602V4.08334ZM15.416 5.83334V15.8333H16.916V5.83334H15.416ZM13.666 17.5833H3.66602V19.0833H13.666V17.5833ZM1.91602 15.8333V5.83334H0.416016V15.8333H1.91602ZM3.66602 17.5833C2.69952 17.5833 1.91602 16.7998 1.91602 15.8333H0.416016C0.416016 17.6283 1.87109 19.0833 3.66602 19.0833V17.5833ZM15.416 15.8333C15.416 16.7998 14.6325 17.5833 13.666 17.5833V19.0833C15.4609 19.0833 16.916 17.6283 16.916 15.8333H15.416ZM13.666 4.08334C14.6325 4.08334 15.416 4.86684 15.416 5.83334H16.916C16.916 4.03841 15.4609 2.58334 13.666 2.58334V4.08334ZM3.66602 2.58334C1.87109 2.58334 0.416016 4.03841 0.416016 5.83334H1.91602C1.91602 4.86684 2.69952 4.08334 3.66602 4.08334V2.58334ZM1.16602 9.08334H16.166V7.58334H1.16602V9.08334ZM4.58268 1.66667V5.00001H6.08268V1.66667H4.58268ZM11.2493 1.66667V5.00001H12.7493V1.66667H11.2493Z"
+                                            fill="#4B5563"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-sm text-text-specs text-start font-medium mb-2">Giới tính</p><button
+                                type="button" role="combobox" aria-controls="radix-:r2q:" aria-expanded="false"
+                                aria-autocomplete="none" dir="ltr" data-state="closed" disabled="" data-disabled=""
+                                class="flex items-center justify-between border-[1px] border-[#D1D5DB] px-3 py-2 placeholder:text-muted-foreground focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;&gt;span]:line-clamp-1 hover:border-[#00D287] h-11 text-base w-full bg-white">
+                                <div class="flex items-center"><span>Nam</span></div><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 opacity-50"
+                                    aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex md:flex-row gap-4 mt-5 flex-col">
+                        <div class="flex-1 relative">
+                            <p class="text-sm text-text-specs text-start font-medium mb-2">Số điện thoại</p>
+                            <div class="input-wrapper relative"><input placeholder="Số điện thoại" disabled=""
+                                    class="py-3 px-1 border-[1px] bg-background w-full pl-4 border-[#D1D5DB] "
+                                    value="+84778579293"><img alt="tick" loading="lazy" width="20" height="20"
+                                    decoding="async" data-nimg="1"
+                                    class="absolute right-[11px] top-1/2 transform -translate-y-1/2"
+                                    src="/asset/images/tick.svg" style="color: transparent;"></div>
+                        </div>
+                        <div class="flex-1 relative">
+                            <p class="text-sm text-text-specs text-start font-medium mb-2">Email</p>
+                            <div class="input-wrapper relative"><input placeholder="Email" disabled=""
+                                    class="py-3 px-1 border-[1px] bg-background w-full pl-4 border-[#D1D5DB] "
+                                    value="nguyenchivuong.73@gmail.com"><img alt="tick" loading="lazy" width="20"
+                                    height="20" decoding="async" data-nimg="1"
+                                    class="absolute right-[11px] top-1/2 transform -translate-y-1/2"
+                                    src="/asset/images/tick.svg" style="color: transparent;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

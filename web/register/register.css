@@ -1,0 +1,337 @@
+/* Register Modal Styles - Clean Classes */
+.register-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 10000;
+}
+
+.register-overlay.active {
+    display: flex;
+}
+
+.register-modal {
+    display: flex;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    max-width: 80rem;
+    width: 50vw;
+    max-height: 85vh;
+}
+
+.register-form-wrap {
+    width: 50%;
+    padding: 2rem;
+    overflow-y: auto;
+    max-height: 85vh;
+    position: relative;
+}
+
+.register-close-mobile {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #111827;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+}
+
+.register-close-desktop {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: white;
+    border: none;
+    color: #111827;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: none;
+}
+
+.close-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.register-logo-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+.register-logo {
+    width: 122px;
+    height: 80px;
+}
+
+.register-title {
+    font-family: 'Mulish';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    margin: 0px 0px 16px;
+    padding: 32px 0px;
+    text-align: center;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 37.5rem;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.field-label {
+    color: #111827;
+    display: inline-block;
+    font-family: 'Mulish';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.required {
+    color: #dc2626;
+}
+
+.field-input {
+    border-color: #dee2e6;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 0.8px;
+    box-shadow: #00000013 0px 2px 4px 0px;
+    color: #111827;
+    display: flex;
+    font-family: 'Mulish';
+    font-size: 14px;
+    line-height: 21px;
+    margin: 8px 0px 0px;
+    padding: 4px 12px;
+    width: 305px;
+    height: 36px;
+}
+
+.field-input::placeholder {
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
+
+.field-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 1px #3b82f6;
+}
+
+.password-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    padding: 0 0.75rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #9ca3af;
+    height: 36px;
+}
+
+.eye-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.error-msg {
+    font-size: 0.75rem;
+    color: #dc2626;
+    display: none;
+}
+
+.error-msg.show {
+    display: block;
+}
+
+.terms-group {
+    align-items: center;
+    color: #111827;
+    display: flex;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0;
+}
+
+.terms-checkbox {
+    margin-right: 0.5rem;
+}
+
+.terms-label {
+    color: #111827;
+    font-family: 'Mulish';
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.terms-link {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.terms-link:hover {
+    text-decoration: underline;
+}
+
+.submit-btn {
+    align-items: center;
+    background-color: #00d289;
+    border-radius: 6px;
+    box-shadow: #00000026 0px 8px 16px 0px;
+    color: #fff;
+    display: inline-flex;
+    font-family: 'Mulish';
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 21px;
+    margin: 32px 0px 0px;
+    padding: 8px 16px;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: rgba(0, 210, 137, 0.9);
+}
+
+.submit-btn:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 1px #059669;
+}
+
+.submit-btn:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.login-link {
+    color: #111827;
+    font-family: 'Mulish';
+    font-size: 14px;
+    line-height: 21px;
+    margin: 16px 0px;
+    text-align: center;
+}
+
+.link-btn {
+    color: #00d287;
+    display: inline-block;
+    font-family: 'Mulish';
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.link-btn:hover {
+    color: #0e7490;
+}
+
+.register-image-wrap {
+    width: 50%;
+    position: relative;
+    border-radius: 0.5rem;
+    display: none;
+}
+
+.register-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* Error states */
+.field-input.error {
+    border-color: #dc2626;
+}
+
+.field-input.error:focus {
+    border-color: #dc2626;
+    box-shadow: 0 0 0 1px #dc2626;
+}
+
+.field-input.success {
+    border-color: #059669;
+}
+
+.field-input.success:focus {
+    border-color: #059669;
+    box-shadow: 0 0 0 1px #059669;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .register-modal {
+        width: 50vw;
+    }
+
+    .register-image-wrap {
+        display: block;
+    }
+
+    .register-close-mobile {
+        display: none;
+    }
+
+    .register-close-desktop {
+        display: flex;
+    }
+}
+
+@media (max-width: 767px) {
+    .register-modal {
+        width: 100%;
+        max-width: 24rem;
+        max-height: none;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .register-form-wrap {
+        width: 100%;
+        max-height: none;
+    }
+
+    .register-title {
+        padding: 0.75rem 0;
+    }
+}

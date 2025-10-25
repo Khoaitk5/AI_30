@@ -1,0 +1,37 @@
+# TVT Future - Configuration Template
+# Copy this file and rename to config.properties
+# Update with your actual values
+
+# Database Configuration
+db.host=localhost
+db.port=1433
+db.name=TVT_Future
+db.username=sa
+db.password=YOUR_PASSWORD_HERE
+
+# VNPay Configuration
+vnpay.tmn_code=YOUR_TMN_CODE
+vnpay.hash_secret=YOUR_HASH_SECRET
+vnpay.url=https://sandbox.vnpayment.vn/paymentv2/vpcpay.html
+vnpay.return_url=http://localhost:8080/tvtfuture/payment/callback
+
+# Google OAuth Configuration
+google.client_id=YOUR_GOOGLE_CLIENT_ID
+google.client_secret=YOUR_GOOGLE_CLIENT_SECRET
+google.redirect_uri=http://localhost:8080/tvtfuture/GoogleAuthController
+
+# Email Configuration (for notifications)
+email.host=smtp.gmail.com
+email.port=587
+email.username=your-email@gmail.com
+email.password=your-app-password
+email.from=noreply@tvtfuture.com
+
+# Chatbot API Configuration (if using external AI)
+chatbot.api_key=YOUR_API_KEY
+chatbot.api_url=YOUR_API_ENDPOINT
+
+# Application Settings
+app.base_url=http://localhost:8080/tvtfuture
+app.session_timeout=30
+app.max_upload_size=10485760

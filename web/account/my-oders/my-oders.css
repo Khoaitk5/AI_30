@@ -1,0 +1,101 @@
+.bg-main {
+    font-family: 'Mulish';
+    color: #111827;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.bg-box {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.left-tabbar-item-selected {
+    background-color: #fff;
+    border-left: 4px solid #00d287;
+}
+
+.c-widget__title__name {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33.6px;
+}
+
+.c-filter__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    margin: 0px 0px 15px;
+}
+
+th.text-center {
+    background-color: #72e5ed;
+    box-shadow: #0000 0px 0px 0px 9999px;
+    font-weight: 600;
+    padding: 8px;
+}
+
+td.text-center {
+    background-color: #fff;
+    box-shadow: #0000 0px 0px 0px 9999px;
+    padding: 8px;
+}
+
+.c-widget__title {
+    padding: 0px 0px 15px;
+}
+
+.c-filter__content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-filter {
+    background-color: #f4f4f4;
+    margin: 0px 0px 15px;
+    padding: 15px;
+}
+
+.form-control {
+    background-color: #f4f4f4;
+    border-color: #d1d5db;
+    border-style: solid;
+    border-width: 1.6px;
+    color: #212529;
+    padding: 8px 36px 8px 12px;
+    width: 166px;
+    height: 42px
+}
+
+.order-id {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.bg-bg-tertiary {
+    background-color: #f4f4f4;
+    border-color: #d1d5db;
+    box-shadow: #00000013 0px 2px 4px 0px;
+    display: inline-flex;
+    justify-content: flex-start;
+    padding: 8px 16px;
+}
+
+.icon24-light-gray {
+    background-image:
+        url("/asset/images/icon24-light-gray.svg");
+    background-position: 50% 50%;
+    background-size: contain;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+.modal-content {
+    padding-top: 88px; /* Đủ chỗ cho header */
+}
