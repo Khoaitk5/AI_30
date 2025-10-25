@@ -61,30 +61,47 @@ ant clean build
 ## Cấu trúc dự án
 ```
 tvtfuture/
-├── build.xml                 # Ant build script
-├── nbproject/                # NetBeans project config
+├── build.xml                  # Ant build script
+├── nbproject/                 # Cấu hình NetBeans project
 ├── src/
-│   ├── conf/
-│   │   ├── MANIFEST.MF
-│   │   └── persistence.xml   # JPA configuration
-│   └── java/
-│       ├── controller/       # Servlets
-│       ├── dao/              # JPA Controllers (DAO)
-│       ├── model/            # Entity classes
-│       ├── service/          # Business logic
-│       └── utils/            # Utility classes
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── controller/        # Servlets - xử lý HTTP requests
+│   │   │   │   └── BookingServlet.java
+│   │   │   ├── service/           # Business logic layer
+│   │   │   ├── dao/              # Data Access Objects - JPA Controllers
+│   │   │   │   ├── BookingsJpaController.java
+│   │   │   │   ├── CarJpaController.java
+│   │   │   │   └── CustomersJpaController.java
+│   │   │   ├── repository/       # Repository pattern (nếu dùng)
+│   │   │   ├── model/            # Entity classes - đối tượng database
+│   │   │   └── util/             # Utility classes - helpers
+│   │   └── resources/
+│   │       └── META-INF/
+│   │           └── persistence.xml   # JPA config (production)
+│   └── test/
+│       ├── java/
+│       │   ├── dao/              # Test cases cho DAOs
+│       │   │   ├── BookingsJpaControllerTest.java
+│       │   │   ├── CarJpaControllerTest.java
+│       │   │   └── CustomersJpaControllerTest.java
+│       │   └── util/
+│       │       └── JpaTestUtil.java  # Utilities cho testing
+│       └── resources/
+│           └── META-INF/
+│               └── persistence.xml   # JPA config (H2 in-memory)
 ├── web/
 │   ├── WEB-INF/
-│   │   ├── web.xml          # Web app configuration
-│   │   └── lib/             # JAR libraries
+│   │   ├── web.xml           # Web app configuration
+│   │   └── lib/              # JAR libraries
 │   ├── META-INF/
-│   │   └── context.xml      # Context configuration
-│   ├── admin/               # Admin pages
-│   ├── home/                # Home pages
-│   ├── login/               # Login pages
-│   └── ...                  # Other JSP/HTML pages
-└── test/                    # Test files
+│   │   └── context.xml       # Context configuration
+│   ├── admin/                # Trang quản trị
+│   ├── home/                 # Trang chủ
+│   ├── login/                # Trang đăng nhập
+│   └── ...                   # JSP/HTML pages khác
 ```
+
 
 ## Các URL chính
 - Homepage: `http://localhost:8080/tvtfuture/`
@@ -120,3 +137,5 @@ TVT Future Team
 
 ## License
 Private Project
+
+
